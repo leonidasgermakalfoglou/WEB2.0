@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Photography portfolio of Leonidas Germanopoulos Kalfoglou.">
+  <title>Leonidas Germanopoulos Kalfoglou — Photography</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="identity" href="#images" aria-label="Leonidas Germanopoulos Kalfoglou — Images">
+        <span>Leonidas</span>
+        <span>Germanopoulos</span>
+        <span>Kalfoglou</span>
+      </a>
+
+      <nav class="navigation">
+        <a href="#images" data-page="images" class="nav-link is-active">Images</a>
+        <a href="#about" data-page="about" class="nav-link">About</a>
+        <a href="#contact" data-page="contact" class="nav-link">Contact</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section id="images" class="page gallery-page" aria-label="Image gallery">
+        <div class="gallery-stage">
+          <div class="image-frame">
+            <img id="gallery-image" alt="" draggable="false">
+            <div id="empty-state" class="empty-state">
+              <p>Your photographs will appear here.</p>
+              <p class="empty-note">Add image files to the <code>images</code> folder.</p>
+            </div>
+          </div>
+          <div class="gallery-controls">
+            <button id="previous-image" class="arrow-button" type="button" aria-label="Previous image" disabled>
+              <span aria-hidden="true">←</span>
+            </button>
+            <button id="next-image" class="arrow-button" type="button" aria-label="Next image" disabled>
+              <span aria-hidden="true">→</span>
+            </button>
+            <span id="image-counter" class="image-counter" aria-live="polite"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="page text-page" hidden>
+        <div class="text-content">
+          <h1>About</h1>
+          <p class="editable-note">Add your biography here.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="page text-page" hidden>
+        <div class="text-content">
+          <h1>Contact</h1>
+          <p class="editable-note">Add your email address and preferred contact details here.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
